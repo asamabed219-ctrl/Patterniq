@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Patterniq</title>
+  <meta name="description" content="Privacy policy for Patterniq, an offline regex testing app for Android.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080A0F;
+      --surface: #121925;
+      --input: #0A0E15;
+      --border: #283347;
+      --border-subtle: #1D2635;
+      --violet: #A78BFA;
+      --violet-subtle: #211B36;
+      --mint: #71F0C0;
+      --text: #F1F5FC;
+      --text-2: #A2AEC2;
+      --mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
+      line-height: 1.65;
+    }
+    main { max-width: 46rem; margin: 0 auto; }
+    header { display: flex; align-items: center; gap: .9rem; margin-bottom: 1.5rem; }
+    header svg { flex: none; }
+    .eyebrow {
+      font: 600 .72rem/1.2 var(--mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin: 0;
+    }
+    h1 { font-size: 1.75rem; line-height: 1.2; margin: .15rem 0 0; }
+    .meta { color: var(--text-2); font-size: .9rem; margin: 0 0 1.5rem; }
+    .summary {
+      background: var(--violet-subtle);
+      border: 1px solid rgba(167, 139, 250, .4);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .summary strong { color: var(--mint); }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin-bottom: .75rem;
+    }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      font: 600 .78rem/1.3 var(--mono);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin: 0 0 .5rem;
+    }
+    h2::before {
+      content: "";
+      width: 3px;
+      height: 12px;
+      border-radius: 1px;
+      background: var(--violet);
+    }
+    p { margin: 0; }
+    p + p { margin-top: .6rem; }
+    code {
+      font-family: var(--mono);
+      font-size: .9em;
+      background: var(--input);
+      border: 1px solid var(--border-subtle);
+      border-radius: 3px;
+      padding: .05rem .35rem;
+      color: var(--violet);
+      overflow-wrap: anywhere;
+    }
+    footer { margin-top: 2rem; color: var(--text-2); font-size: .85rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="44" height="44" viewBox="0 0 48 48" role="img" aria-label="Patterniq logo">
+      <rect width="48" height="48" rx="10" fill="#0D1119"/>
+      <path fill="#A78BFA" d="M6 6h12v5h-7v26h7v5H6zM42 6H30v5h7v26h-7v5h12z"/>
+      <rect x="17" y="15" width="14" height="14" rx="2.5" fill="#71F0C0"/>
+      <path fill="#8B75E8" d="M17 32h4v2.5h-4zM22 32h4v2.5h-4zM27 32h4v2.5h-4z"/>
+    </svg>
+    <div>
+      <p class="eyebrow">Patterniq · Regex Lab</p>
+      <h1>Privacy Policy</h1>
+    </div>
+  </header>
+
+  <p class="meta">Effective October 20, 2026 · Android app <code>com.patterniqMO.patterniq</code></p>
+
+  <div class="summary">
+    <p><strong>Summary:</strong> Patterniq is an offline regular expression tool. It has no account
+    system, no servers, no advertising and no analytics. The app does not request internet access
+    and does not collect, share or sell any data.</p>
+  </div>
+
+  <section>
+    <h2>Regex processing</h2>
+    <p>Every pattern you enter is compiled and matched on your device. Patterns and test input are
+    never transmitted to a server or to any third party.</p>
+  </section>
+
+  <section>
+    <h2>Saved patterns</h2>
+    <p>Patterns you save, including their names, descriptions, categories and flags, are stored in a
+    local database on your device.</p>
+  </section>
+
+  <section>
+    <h2>History</h2>
+    <p>When history is on, Patterniq stores recently tested expressions on your device, up to 100
+    entries. Test input is only stored if you turn on “Include test input” in Settings; that option is
+    off by default.</p>
+    <p>You can delete single entries, clear all history, or turn history off at any time. Turning off
+    “Include test input” removes test input that was already stored.</p>
+  </section>
+
+  <section>
+    <h2>Preferences</h2>
+    <p>Settings such as live matching, and the last pattern you worked on, are stored locally so the
+    workspace can be restored. Test input is never restored from preferences.</p>
+  </section>
+
+  <section>
+    <h2>Export and import</h2>
+    <p>Export writes a JSON file to a location you choose with the system file picker. That file is
+    under your control; Patterniq does not upload it anywhere. Import reads a file you select and
+    processes it locally. Imported content is treated as data and is never executed.</p>
+  </section>
+
+  <section>
+    <h2>Clipboard</h2>
+    <p>Patterniq only reads the clipboard when you tap a Paste button, and only writes to it when you
+    tap a Copy button. Where Android supports it, copied test input is marked as sensitive.</p>
+  </section>
+
+  <section>
+    <h2>Backups</h2>
+    <p>Android cloud backup and device-to-device transfer are disabled for Patterniq, so the app does
+    not copy your data to cloud storage.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <p>Patterniq requests no runtime permissions and does not use the network.</p>
+  </section>
+
+  <section>
+    <h2>Deleting your data</h2>
+    <p>Delete patterns and history inside the app. To remove all app data, clear Patterniq’s storage in
+    Android settings or uninstall the app.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>Patterniq does not collect personal information from anyone, including children.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated text will be published on this page and will ship with a
+    new app version.</p>
+  </section>
+
+  <footer>Patterniq · Test Patterns. Understand Matches.</footer>
+</main>
+</body>
+</html>
